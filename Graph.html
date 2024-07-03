@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cybrom Connect ER Diagram</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f0f0f0;
+      padding: 20px;
+    }
+    .tree {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      margin-top: 20px;
+    }
+    .entity {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin: 0 20px;
+      text-align: center;
+    }
+    .entity h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+    }
+    .attributes {
+      margin-top: 10px;
+    }
+    .attributes div {
+      margin-bottom: 5px;
+      text-align: left;
+    }
+    .relationship {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin: 20px;
+      max-width: 400px;
+      text-align: left;
+    }
+    .relationship h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+    }
+    .relationship ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .relationship ul li {
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+<div class="tree">
+  <div class="entity">
+    <h2>User</h2>
+    <div class="attributes">
+      <div><strong>userID</strong>: string</div>
+      <div><strong>username</strong>: string</div>
+      <div><strong>password</strong>: string</div>
+      <div><strong>role</strong>: string (admin, user)</div>
+    </div>
+  </div>
+  <div class="entity">
+    <h2>Order</h2>
+    <div class="attributes">
+      <div><strong>orderID</strong>: string</div>
+      <div><strong>userID</strong>: string</div>
+      <div><strong>totalAmount</strong>: number</div>
+      <div><strong>status</strong>: string (pending, completed, cancelled)</div>
+    </div>
+  </div>
+  <div class="tree">
+    <div class="entity">
+      <h2>Institute</h2>
+      <div class="attributes">
+        <div><strong>instituteID</strong>: string</div>
+        <div><strong>name</strong>: string</div>
+        <div><strong>description</strong>: string</div>
+      </div>
+    </div>
+
+    <div class="entity">
+      <h2>Product</h2>
+      <div class="attributes">
+        <div><strong>productID</strong>: string</div>
+        <div><strong>name</strong>: string</div>
+        <div><strong>price</strong>: number</div>
+        <div><strong>category</strong>: string</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="relationship">
+  <h2>Relationships</h2>
+  <ul>
+    <li>User <strong>has</strong> Role (admin or user)</li>
+    <li>User <strong>places</strong> Order</li>
+    <li>Institute <strong>manages</strong> Products</li>
+    <li>Product <strong>belongs to</strong> Category</li>
+  </ul>
+</div>
+
+</body>
+</html>
+
