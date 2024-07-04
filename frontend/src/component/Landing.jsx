@@ -13,11 +13,29 @@ const Landing = () => {
     </div>
 
     <div className='container1'>
-      <h1>Find the right job or internship for you</h1>
-      
-    </div>
-    
-    
+      <h1 style={{color:"red" , marginTop:"80px",marginRight:"20px"}}>Find the right job or <br/> internship for you</h1>
+      <ul>
+        <div style={{marginTop:"10px"}}>SUGGESTED SEARCHES</div><br/>
+        <ul>
+        <li>Engineering</li>
+        <li>Coching</li>
+        <li>Techno technical</li>
+        </ul>
+        
+        <br />
+        <ul>
+        <li>LNCT</li>
+        <li>Cybrom</li>
+        <li>Technology</li>
+        </ul>
+        <br />
+       <ul>
+       <li>Privite</li>
+        <li>Coding</li>
+        <li>Thinker</li>
+       </ul>
+      </ul>
+    </div> 
   </section>
    </>
   )
