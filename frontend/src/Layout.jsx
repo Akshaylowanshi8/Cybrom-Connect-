@@ -3,6 +3,7 @@ import { Link, Outlet } from "react-router-dom";
 import { MdWork } from "react-icons/md";
 import { IoHome } from "react-icons/io5";
 import Home from './Home';
+import Footer from "./component/Footer";
 const Layout=()=>{
     return(<>
 <div className="bg-transparent shadow-sm  justify-evenly text-center  text-2xl align-middle flex play">
@@ -33,6 +34,8 @@ const Layout=()=>{
 
 
 <Outlet />
+
+<Footer />
     </>)
 
 }
