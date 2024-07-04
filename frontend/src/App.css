@@ -1,42 +1,74 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+.img{
+  height: 500px;
+  float: right;
+  margin-right: 100px;
+}
+
+.right{
+  float: right;
+ 
+}
+.imgtitle{
+ margin-left: 200px;
+ z-index: 100;
+ margin-top:-20px;
+ color: blue;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.imgtitle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
+  width: 100%;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.centered-text {
+
+margin-left: -670px;
+font-size: 40px;
+color: white;
+font-weight: 900;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.fronttitle{
+  font-size: 40px;
+  color: red;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+
+.btn{
+  margin-top: 20px;
+}
+.custom-button {
+  width: 300px; /* Adjust the width as needed */
+  padding: 10px; /* Adjust the padding as needed */
+  border-radius: 25px; /* Adjust the radius for more or less curvature */
+  background-color: white; /* Adjust the background color as needed */
+  color: black; /* Adjust the text color as needed */
+ /* Remove border */
+  cursor: pointer; /* Change cursor to pointer */
+  border:1px solid red
+
 }
 
-.card {
-  padding: 2em;
+.agreement-text, .new-to-linkedin, .join-now {
+  font-size: 12px; /* Adjust the font size as needed */
 }
 
-.read-the-docs {
-  color: #888;
+.join-now {
+  text-decoration: none;
+  color: blue; /* Adjust color as needed */
+  margin-left: 5px; /* Optional: space between text and link */
+}
+
+
+.custom-button:hover {
+  background-color: wheat; /* Darker shade on hover */
 }
