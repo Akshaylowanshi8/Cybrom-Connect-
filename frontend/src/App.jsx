@@ -6,6 +6,7 @@ import Footer from './component/Footer'
 import SignInForm from './component/SignInForm'
 import Landing from './component/Landing'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+
 function App() {
   return (
     <>
@@ -19,7 +20,6 @@ function App() {
   </Route>
   </Routes>
 </BrowserRouter>
-
     </>
   )
 }
