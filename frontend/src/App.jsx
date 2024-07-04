@@ -16,7 +16,7 @@ function App() {
   <Route path='home' element={<Home />} />
   {/* <Route path='home' element={  <Landing />} /> */}
   {/* <Route path='home' element={ } /> */}
-  {/* <Route path='home' element={ <SignInForm/>} /> */}
+  <Route path='login' element={ <SignInForm/>} />
   </Route>
   </Routes>
 </BrowserRouter>

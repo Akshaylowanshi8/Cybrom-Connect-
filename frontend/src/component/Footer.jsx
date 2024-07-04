@@ -1,12 +1,13 @@
 import React from 'react'
-import logo from "../assets/cc logo.jpg";
+
+
 
 const Footer = () => {
   return (
     <div>
        <footer>
         <div id="row">
-        <img id="logo" src={logo}/><br/>
+        <img width={160}  src="\src\assets\cclogos.png"/><br/>
             <div id="col">
                 
                 <h1>General <div id="under-line"><span></span></div></h1>
@@ -22,7 +23,6 @@ const Footer = () => {
           
             <div id="col">
                 <h1>Browse LinkedIn <div id="under-line"><span></span></div></h1>
-            
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Blog</a></li>
