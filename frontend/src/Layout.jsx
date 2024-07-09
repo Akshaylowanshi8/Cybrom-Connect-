@@ -19,7 +19,7 @@ const Layout=()=>{
     <li className="">
     <IoHome /><Link to="home">Home</Link></li>
     <li className=""><h1 className=""><MdWork /></h1><Link to="home">Jobs</Link></li>
-    
+    <li className=""><Link to="about">About</Link></li>
     <li className=""><IoHome /><Link to="home">shop</Link></li>
   <li className=""><IoHome /><Link to="home"></Link></li>
   <li className=""><Link to="login">Login</Link></li>
