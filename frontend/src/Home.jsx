@@ -7,8 +7,6 @@ const Home=()=>{
 return(<>
 <Header />
 <Landing />
-
 </>)
 }
-
 export default Home
