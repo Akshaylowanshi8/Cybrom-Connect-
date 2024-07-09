@@ -2,7 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 
 const UploadTech = () => {
-  const [tech, setTech] = useState({});
+  const [tech, setTech] = useState([]);
 
   const Techinput = (e) => {
     let name = e.target.name;
