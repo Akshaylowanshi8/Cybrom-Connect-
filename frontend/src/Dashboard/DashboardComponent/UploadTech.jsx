@@ -26,9 +26,13 @@ const UploadTech = () => {
     <>
       <form action="">
         <label htmlFor="Tname">Technology Name</label>
-        <input name="Tname" onChange={Techinput} />
-        <label htmlFor="T">Technology Name</label>
-        <input name="Tname" onChange={Techinput} />
+        <input name="Tname" id="Tname" type="text" onChange={Techinput} />
+        <label htmlFor="Tprice">Technology Price</label>
+        <input name="Tprice" id="Tprice" type="number" onChange={Techinput} />
+        <label htmlFor="Timage">Technology Price</label>
+        <input name="Timage" id="Timage" type="file" onChange={Techinput} />
+        <label htmlFor="Tdescription">Technology Despription</label>
+        <input name="Tdescription" id="Tdescription" onChange={Techinput} />
       </form>
       <button onClick={SubmitAction}>Submit</button>
     </>
