@@ -14,10 +14,7 @@ const Layout=()=>{
 <div class="relative overflow-hidden">
                     <img class="object-cover w-full bg-white h-full" src="\src\assets\cclogos.png" className="p-4" width={200} alt="Product" />
                     <div class="absolute inset-1 hover:shadow-gray-900 shadow-sm opacity-40"></div>
-                </div>
-
-                
-
+</div>
 <ul className="flex align-middle pt-10 gap-7">
     <li className="">
     <IoHome /><Link to="home">Home</Link></li>
@@ -26,11 +23,8 @@ const Layout=()=>{
     <li className=""><IoHome /><Link to="home">shop</Link></li>
   <li className=""><IoHome /><Link to="home"></Link></li>
   <li className=""><Link to="login">Login</Link></li>
-
 </ul>
-
 <div className=""></div>
-
 </div>
 
 

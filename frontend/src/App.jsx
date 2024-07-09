@@ -4,7 +4,7 @@ import Home from './Home'
 import React from 'react'
 import Footer from './component/Footer'
 import SignInForm from './component/SignInForm'
-import Landing from './component/Landing'
+// import Landing from './component/Landing'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 function App() {

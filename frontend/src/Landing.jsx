@@ -1,5 +1,5 @@
 import React from 'react'
-import img1 from "../assets/dbvmk0tsk0o0hd59fi64z3own.png";
+// import img1 from "../assets/dbvmk0tsk0o0hd59fi64z3own.png";
 const Landing = () => {
   return (
    <>
@@ -11,10 +11,8 @@ const Landing = () => {
     </div>
     <div ><img className='img2' src="https://png.pngtree.com/png-vector/20240309/ourmid/pngtree-we-are-open-hanging-signboard-now-icon-banner-sign-illustration-vector-png-image_11905814.png" alt="" /></div>
     </div>
-
     <div className='container1'>
-      <h1>Find the right job or internship for you</h1>
-      
+    <h1>Find the right job or internship for you</h1>  
     </div>
   </section>
    </>
