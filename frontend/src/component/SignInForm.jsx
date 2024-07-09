@@ -13,12 +13,13 @@ const SignInForm = () => {
   };
 
   return (
-    <div className="signin-container">
+    <div className="signin-container py-6 px-7 mt-24 mb-11">
       <h2>Welcome to your professional community</h2>
       <form onSubmit={handleSubmit} className="signin-form">
         <div className="form-group">
           <label htmlFor="email">Email or phone</label>
           <input
+          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             type="email"
             id="email"
             value={email}
@@ -29,6 +30,7 @@ const SignInForm = () => {
         <div className="form-group">
           <label htmlFor="password">Password</label>
           <input
+          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             type="password"
             id="password"
             value={password}
