@@ -3,9 +3,12 @@ import Footer from "./component/Footer";
 import Navbar from "./Layout/Navbar";
 const Layout=()=>{
     return(<>
+
 <Navbar />
 <Outlet />
 <Footer />
+    
+    
     </>)
 
 }
