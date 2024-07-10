@@ -7,7 +7,8 @@ import UploadTech from './Dashboard/DashboardComponent/UploadTech'
 import About from './component/About'
 import Layout from './Layout'
 import Home from './Home';
-import SignInForm from './component/SignInForm';
+import AdminHome from './Dashboard/DashboardLayout/Asideheader'
+
 function App() {
   return (
 <BrowserRouter>
@@ -22,7 +23,7 @@ function App() {
   </Route>
 
 
-  <Route path='/dashboard' element={<Layout />}>
+  <Route path='/dashboard' element={<AdminHome />}>
   {/* <Route path='dashboard' element={<Dashboard />} /> */}
   <Route path='/dashboard/uploadtech' element={ <UploadTech/>} />
   </Route>

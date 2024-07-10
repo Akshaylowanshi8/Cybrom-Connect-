@@ -7,7 +7,7 @@ const port = 8000
 const mongoose = require("mongoose");
 const dashboardRoutes = require("./routes/dashboard.Router")
 mongoose
-  .connect(process.env.DataBase,{useNewUrlParser: true,useUnifiedTopology: true})
+  .connect(process.env.DataBase)
   .then(() => console.log("💻 Mondodb Connected"))
   .catch(err => console.error(err));
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -16,7 +16,7 @@ app.use(cors());
 
 // app.get('/', (req, res) => res.send('Hello World!'))
 app.use('/dashboard',dashboardRoutes)
-
-
-
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+
+
+

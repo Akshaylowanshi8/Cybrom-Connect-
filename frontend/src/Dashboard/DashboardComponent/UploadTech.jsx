@@ -1,6 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
-
+import "../Dashboard.assets/css/uploadtech.css"
 const UploadTech = () => {
   const [tech, setTech] = useState([]);
 
@@ -23,19 +23,19 @@ const UploadTech = () => {
   };
 
   return (
-    <>
+    <div className="Upload-main-div">
       <form action="">
         <label htmlFor="Tname">Technology Name</label>
-        <input name="Tname" id="Tname" type="text" onChange={Techinput} />
+        <input name="Tname" id="Tname" type="text" onChange={Techinput} /><br />
         <label htmlFor="Tprice">Technology Price</label>
-        <input name="Tprice" id="Tprice" type="number" onChange={Techinput} />
+        <input name="Tprice" id="Tprice" type="number" onChange={Techinput} /><br />
         <label htmlFor="Timage">Technology Price</label>
-        <input name="Timage" id="Timage" type="file" onChange={Techinput} />
+        <input name="Timage" id="Timage" type="file" onChange={Techinput} /><br />
         <label htmlFor="Tdescription">Technology Despription</label>
-        <input name="Tdescription" id="Tdescription" onChange={Techinput} />
+        <input name="Tdescription" id="Tdescription" onChange={Techinput} /><br />
       </form>
       <button onClick={SubmitAction}>Submit</button>
-    </>
+    </div>
   );
 };
 
