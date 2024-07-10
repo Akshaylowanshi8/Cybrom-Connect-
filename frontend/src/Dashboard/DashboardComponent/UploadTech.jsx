@@ -9,7 +9,6 @@ const UploadTech = () => {
     let value = e.target.value;
     setTech((values) => ({ ...values, [name]: value }));
   };
-
   const SubmitAction = () => {
     let url = "http://localhost:8000/dashboard/uploadtech";
     console.log(tech);
