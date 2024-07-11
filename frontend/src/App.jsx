@@ -6,6 +6,8 @@ import UploadTech from './Dashboard/DashboardComponent/UploadTech'
 import About from './component/About'
 import Layout from './Layout'
 import Home from './Home';
+import AdminHome from './Dashboard/DashboardLayout/Asideheader'
+import AdminLogin from './component/AdminLogin'
 function App() {
   return (
 <BrowserRouter>
@@ -14,9 +16,11 @@ function App() {
   <Route path='home' element={<Home />} />
   <Route path='about' element={<About />} />
   <Route path='login' element={ <SignInForm/>} />
-  <Route path='login' element={ <SignInForm />} />
+  <Route path='alogin' element={ <AdminLogin />} />
   </Route>
-  <Route path='/dashboard' element={<Layout />}>
+
+  <Route path='/dashboard' element={<AdminHome />}>
+  {/* <Route path='/dashboard' element={<Layout />}> */}
   {/* <Route path='dashboard' element={<Dashboard />} /> */}
   <Route path='/dashboard/uploadtech' element={ <UploadTech/>} />
   </Route>

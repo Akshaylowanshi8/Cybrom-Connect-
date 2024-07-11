@@ -3,7 +3,7 @@ const Technology = require("../models/Technology");
 const UploadTech = async (req, res) => {
   try {
     const  Tname  = req.body;
-    console.log(Tname);
+    // console.log(Tname);
 
     const newTech = new Technology( Tname );
     const savedTech = await newTech.save();
