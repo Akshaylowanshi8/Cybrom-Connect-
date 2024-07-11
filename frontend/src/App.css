@@ -173,6 +173,7 @@ li{
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
+  width: 100%;
 }
 
 h2 {
@@ -221,4 +222,28 @@ h2 {
 
 .signin-footer a:hover {
   text-decoration: underline;
+}
+
+/*  about page */
+.about{
+  display: flex;
+
+}
+
+.tag{
+color: #0e0b0b;
+  font-size: 45px;
+  font-weight: 600;
+  margin-top: 150px;
+  margin-left: 25px;
+}
+
+.tag1{
+  font-family: "Gill Sans", sans-serif;
+  font-size: 15px;
+  margin-top: 15px;
+}
+
+.about img{
+  
 }

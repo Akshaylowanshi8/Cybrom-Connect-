@@ -1,13 +1,12 @@
-import Landing from "./component/Landing"
-
+import Header from "./Header"
+// import Landing from "./component/Landing"
+// import SignInForm from './component/SignInForm';
+import Landing from './Landing';
 
 const Home=()=>{
 return(<>
-<h1>dicdkbcdc</h1>
-
+<Header />
 <Landing />
-
 </>)
 }
-
 export default Home
