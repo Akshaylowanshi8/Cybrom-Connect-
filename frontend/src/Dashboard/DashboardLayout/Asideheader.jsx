@@ -24,6 +24,7 @@ mynav("/home")
             <h2>Admin</h2> 
             <hr style={{marginTop:"20px"}}/>
             <Link className="desh-link" to="uploadtech">uploadtech</Link>
+            <Link className="desh-link" to="alltech" >All Technology</Link>
             
           </div>
         </aside>

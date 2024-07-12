@@ -1,4 +1,10 @@
 const Technology = require("../models/Technology");
+const Cloudinary = require("../Couldinary")
+
+
+
+
+
 
 const UploadTech = async (req, res) => {
   try {

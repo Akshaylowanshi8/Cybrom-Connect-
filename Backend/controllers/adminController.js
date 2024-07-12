@@ -4,7 +4,7 @@ const AdminLogin= async(req ,res)=>{
     console.log( Email , Password );
     await AdminLoginData.findOne({"Email" : Email})
    .then(user => {
-       // console.log(user);
+       console.log(user);
        if(user){
            if(user.Password === Password){
                res.json("Success")

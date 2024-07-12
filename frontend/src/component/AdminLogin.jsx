@@ -13,6 +13,7 @@ const AdminLogin=()=>{
     //   console.log('Email:', email);
     //   console.log('Password:', password);
     let url ="http://localhost:8000/dashboard/AdminLogin"
+    // alert("bjwed")
     await axios
       .post(url,{Email:email,Password:password})
       .then(res =>{
