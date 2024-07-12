@@ -20,5 +20,5 @@ app.use(cors());
 app.use('/dashboard',dashboardRoutes)
 app.use('/user',userRoutes)
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+app.listen(port, () => console.log(`Server is Running Port ${port}!`))
 
