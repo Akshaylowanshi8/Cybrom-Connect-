@@ -6,7 +6,6 @@ import Landing from './Landing';
 
 const Home=()=>{
 return(<>
-<UploadTech />
 <Header />
 <Landing />
 </>)
