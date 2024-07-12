@@ -62,7 +62,7 @@ const loginUser=async(req,res)=>{
             const logoutUser= async(req,res)=>{
               try {
                 res.clearCookie("jwt", { path: "/" });
-                res.status(200).json({message:"Logout Successfull"})
+                res.status(200).json({message:"Logout Successfull Done"})
                 } catch (error) {
                   res.status(400).json({error:error.messge})
                   }
