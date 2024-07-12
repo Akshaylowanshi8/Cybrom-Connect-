@@ -4,7 +4,7 @@ import img2 from "../assets/3.png";
 import React from 'react';
 import TextTransition, { presets } from 'react-text-transition';
 
-const TEXTS = ['Forest', 'Building', 'Tree', 'Color'];
+const TEXTS = ["Cybrom" ,"Connect"];
 const About=()=>{
   const [index, setIndex] = React.useState(0);
 
@@ -15,15 +15,14 @@ const About=()=>{
     );
     return () => clearTimeout(intervalId);
   }, []);
-
   return(
     <>
     <div className="about">
         <div className="about1">
         <h1 className="tag">
-      <TextTransition springConfig={presets.wobbly}>{TEXTS[index % TEXTS.length]}</TextTransition>
+      <TextTransition springConfig={presets.molasses}>{TEXTS[index % TEXTS.length]}</TextTransition>
     </h1>
-        <h1 className="tag">Cybrom Connect</h1>
+        {/* <h1 className="tag">Cybrom Connect</h1> */}
        <div className="tag1 p-7"> Codemithra is a leading education and placement platform that helps
          students
          achieve certification and get placements in large MNCs.

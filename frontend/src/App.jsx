@@ -1,6 +1,6 @@
 import './App.css'
 import React from 'react'
-import SignInForm from './component/SignInForm'
+// import SignInForm from './component/SignInForm'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import UploadTech from './Dashboard/DashboardComponent/UploadTech'
 import About from './component/About'
@@ -9,6 +9,8 @@ import Home from './Home';
 import AdminHome from './Dashboard/DashboardLayout/Asideheader';
 import ActiveTechnology from './Dashboard/DashboardComponent/ActiveTechnology'
 import AdminLogin from './component/AdminLogin'
+import Contect from './component/Contect'
+import SignInForm from './component/UserSignInForm'
 
 function App() {
   return (
@@ -17,7 +19,8 @@ function App() {
   <Route path='/' element={<Layout />}>
   <Route path='home' element={<Home />} />
   <Route path='about' element={<About />} />
-  <Route path='login' element={ <SignInForm/>} />
+  <Route path='contect' element={<Contect />} />
+  <Route path='login' element={ <SignInForm />} />
   <Route path='alogin' element={ <AdminLogin />} />
   </Route>
 
