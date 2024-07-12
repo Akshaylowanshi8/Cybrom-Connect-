@@ -6,8 +6,6 @@ import TextTransition, { presets } from 'react-text-transition';
 
 const TEXTS = ['Forest', 'Building', 'Tree', 'Color'];
 const About=()=>{
-
-
   const [index, setIndex] = React.useState(0);
 
   React.useEffect(() => {
