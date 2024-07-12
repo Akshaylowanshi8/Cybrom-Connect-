@@ -219,6 +219,73 @@ color: #0e0b0b;
   margin-top: 15px;
 }
 
-.about img{
+/* header page */
+
+.left{
+  display: flex;
+  height: 570px;
+}
+
+.fronttitle{
+  font-size: 40px;
+  font-weight: 700;
+  margin-left: 55px;
+  margin-top: 95px;
   
+}
+
+.custom-button{
+  
+  font-size: 22px;
+  margin-left: 55px;
+  margin-top: 15px;
+  background-color: #0074d9;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn{
+  margin-top: 20px;
+  margin-bottom: 55px;display: flex;
+}
+
+.agreement-text{
+     font-size: 18px;
+     margin-left: 55px;
+     font-weight: 500;
+}
+
+.new-to-linkedin{
+  margin-left: 55px;
+  margin-top: 20px;
+  font-weight: 400;
+  
+}
+
+.join-now{
+  margin-left: 25px;
+  background-color: #0074d9;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.centered-text{
+  background-color: #a21b89;
+  color: white;
+  margin-left: 25px;
+  
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.image-container{
+  margin-left: 195px;
+  margin-top: 90px;
 }

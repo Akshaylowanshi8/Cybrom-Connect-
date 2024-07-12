@@ -7,7 +7,7 @@ const SignInForm = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Handle form submission logic here
+
     console.log('Email:', email);
     console.log('Password:', password);
   };
@@ -42,7 +42,7 @@ const SignInForm = () => {
       </form>
       <div className="signin-footer">
         <a href="/forgot-password">Forgot password?</a>
-        <a href="/join">New to LinkedIn? Join now</a>
+        <a href="/join">New to cybrom connect ? Join now</a>
       </div>
     </div>
   );
