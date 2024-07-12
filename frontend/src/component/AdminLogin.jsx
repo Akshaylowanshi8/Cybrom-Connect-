@@ -3,10 +3,9 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const AdminLogin=()=>{
-
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-  
+
     const Nav=useNavigate();
     const handleSubmit = async(event) => {
       event.preventDefault();
@@ -21,11 +20,8 @@ const AdminLogin=()=>{
         {
         alert(res.data)
         Nav('/dashboard')
-
         }
         alert(res.data)
-        
-      
 
       }  
     )
