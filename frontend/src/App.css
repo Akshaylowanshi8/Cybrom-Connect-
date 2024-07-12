@@ -15,6 +15,12 @@
   display: flex;
   justify-content: center;
   height: 600px;
+  margin-left: 35px;
+  
+}
+
+.container1{
+  background-image: url("./");
 }
 .row{
  /* margin-left: 200px; */
@@ -33,7 +39,7 @@ margin-top: 100px;
   /* color: red; */
 }
 .img2{
-  padding-left: 150px;
+  padding-left: 200px;
   margin-top: 58px;
   width: 600px;
   height: fit-content;
@@ -42,6 +48,9 @@ margin-top: 100px;
 .container1{
   width: 100%;
   background-color: rgb(248, 209, 157);
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
 }
 
 
@@ -224,6 +233,10 @@ color: #0e0b0b;
 .left{
   display: flex;
   height: 570px;
+ /* background-image: url("./assets/homeimg.png"); */
+ background-repeat: no-repeat;
+ background-size: cover;
+ /* position: ; */
 }
 
 .fronttitle{

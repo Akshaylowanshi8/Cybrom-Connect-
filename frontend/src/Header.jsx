@@ -1,6 +1,6 @@
 
 
-import Landing from "./assets/landing.jpg"
+import Landing from "./assets/th.jpeg"
 
 const Header=()=>{
 return(<>
