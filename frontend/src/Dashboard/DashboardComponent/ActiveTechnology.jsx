@@ -28,8 +28,10 @@ const DisplayTech = () => {
             <p>{product.Tdescription}</p>
             <p>Price: ${product.Tprice}</p>
             <p>Apply Date: {new Date(product.aplyDate).toLocaleDateString()}</p>
+            {/* not set yet  */}
             {product.imageUrls && product.imageUrls.map((url, index) => (
               <img key={index} src={url} alt={`${product.Tname} ${index + 1}`} />
+
             ))}
           </div>
         ))}
