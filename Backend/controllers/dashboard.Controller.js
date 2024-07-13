@@ -1,6 +1,6 @@
 const formidable = require('formidable');
 const Technology = require("../models/Technology");
-const Cloudinary = require("../Couldinary"); 
+const Cloudinary = require("../Couldinary")
 
 const uploadImagesinCloudinary = async (imgPaths) => {
   try {

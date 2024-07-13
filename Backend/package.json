@@ -15,11 +15,8 @@
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
-<<<<<<< HEAD
     "formidable": "^3.5.1",
-=======
     "jsonwebtoken": "^9.0.2",
->>>>>>> 557c0c0eb0b8ccedab3ca5b1ccaa64bd3fa1af5e
     "mongoose": "^8.4.4",
     "nodemon": "^3.1.4",
     "validator": "^13.12.0"

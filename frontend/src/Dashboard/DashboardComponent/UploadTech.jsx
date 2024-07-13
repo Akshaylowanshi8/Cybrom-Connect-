@@ -14,7 +14,7 @@ const UploadTech = () => {
 
   const Techfileinput = (e) => {
     setTechimg(e.target.files);
-  }
+  };
 
   const SubmitAction = (e) => {
     e.preventDefault();
@@ -33,13 +33,14 @@ const UploadTech = () => {
       headers: {
         'Content-Type': 'multipart/form-data'
       }
+      
     })
-      .then((res) => {
-        console.log(res.data);
-      })
-      .catch((error) => {
-        console.error('Error uploading technology:', error);
-      });
+    .then((res) => {
+      console.log(res.data);
+    })
+    .catch((error) => {
+      console.error('Error uploading technology:', error);
+    });
   };
 
   return (
@@ -62,10 +63,11 @@ const UploadTech = () => {
         <input type="date" name="aplyDate" max={"2024-12-31"} min={"2024-01-01"} onChange={Techinput} required /><br /><br />
         <label htmlFor="Tprice">Technology Price</label>
         <input name="Tprice" id="Tprice" type="number" onChange={Techinput} /><br /><br />
-        <label htmlFor="Timage">Images</label>
-        <input name="Timage" id="Timage" type="file" onChange={Techfileinput} multiple /><br /><br />
         <label htmlFor="Tdescription">Technology Description</label>
         <input name="Tdescription" id="Tdescription" onChange={Techinput} /><br /><br />
+        <label htmlFor="Timage">Images</label>
+        <input name="Timage" id="Timage" type="file" onChange={Techfileinput} multiple /><br /><br />
+        
         <button type="submit">Submit</button>
       </form>
     </div>
