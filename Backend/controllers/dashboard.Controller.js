@@ -13,7 +13,6 @@ const uploadImagesinCloudinary = async (imgPaths) => {
     throw error;
   }
 };
-
 const UploadTech = async (req, res) => {
   const form = new formidable.IncomingForm();
   form.multiples = true;
@@ -23,17 +22,11 @@ const UploadTech = async (req, res) => {
       console.error('Form parsing error:', err);
       return res.status(400).json({ error: 'Form parsing error' });
     }
-
     try {
-      // Log form fields and files
       console.log('Form fields:', fields);
       console.log('Form files:', files);
-
-      // Upload images to Cloudinary
       const imgPaths = files.Techimages ? (Array.isArray(files.Techimages) ? files.Techimages.map(file => file.filepath) : [files.Techimages.filepath]) : [];
       const uploadResults = await uploadImagesinCloudinary(imgPaths);
-
-      // Ensure fields are strings
       const formData = {
         Tname: Array.isArray(fields.Tname) ? fields.Tname[0] : fields.Tname,
         Ttachnology: Array.isArray(fields.Ttachnology) ? fields.Ttachnology[0] : fields.Ttachnology,
@@ -42,14 +35,9 @@ const UploadTech = async (req, res) => {
         Tdescription: Array.isArray(fields.Tdescription) ? fields.Tdescription[0] : fields.Tdescription,
         imageUrls: uploadResults.map(result => result.secure_url),
       };
-
-      // Log the formData before saving
       console.log('Form data to be saved:', formData);
-
-      // Save form data to MongoDB
       const newTech = new Technology(formData);
       const savedTech = await newTech.save();
-
       res.status(201).json(savedTech);
     } catch (error) {
       console.error('Error saving technology data:', error);
@@ -57,5 +45,16 @@ const UploadTech = async (req, res) => {
     }
   });
 };
+// ----------All Technology---------
+const AllTechnology = async (req,res)=>{
+  
+  try {
+    const products = await Technology.find({});
+    res.status(200).json(products);
+  } catch (error) {
+    console.error('Error fetching products:', error);
+    res.status(500).json({ error: 'Error fetching products' });
+  }
+}
 
-module.exports = { UploadTech };
+module.exports = { UploadTech,AllTechnology };
