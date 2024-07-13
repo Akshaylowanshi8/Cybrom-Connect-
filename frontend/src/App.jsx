@@ -11,7 +11,6 @@ import ActiveTechnology from './Dashboard/DashboardComponent/ActiveTechnology'
 import AdminLogin from './component/AdminLogin'
 import Contect from './component/Contect'
 import SignInForm from './component/UserSignInForm'
-
 function App() {
   return (
 <BrowserRouter>
@@ -24,7 +23,7 @@ function App() {
   <Route path='alogin' element={ <AdminLogin />} />
   </Route>
 
-  <Route path='/dashboard' element={<AdminHome />}>
+<Route path='/dashboard' element={<AdminHome />}>
 
   {/* <Route path='/dashboard' element={<Layout />}> */}
   {/* <Route path='dashboard' element={<Dashboard />} /> */}

@@ -26,7 +26,8 @@ const Contect=()=>{
       const handleSubmit =async(e) => {
         e.preventDefault();
         // Here you can add your logic for form submission, like sending data to a server or processing it in some way
-        let api = "http://localhost:8000/contect"
+        let api = "http://localhost:8000/user/contect"
+    
     
         await axios.post(api,formData).then((res) => {
             alert(res.data);
@@ -42,7 +43,7 @@ const Contect=()=>{
       }; 
     return (
         <>
-<div className="container my-12 mx-auto px-2 md:px-4">
+<div className="container my-12 mx-auto px-2 md:px-4 bg-white">
   <section className="mb-32">
     <div className="flex justify-center">
       <div className="text-center md:max-w-xl lg:max-w-3xl">
@@ -134,7 +135,7 @@ const Contect=()=>{
               </div>
               <div className="ml-6 grow">
                 <p className="mb-2 font-bold">Technical support</p>
-                <p className="text-neutral-500 ">support@example.com</p>
+                <p className="text-neutral-500 ">support@cybromconnect.com</p>
                 <p className="text-neutral-500 ">+1 234-567-89</p>
               </div>
             </div>
@@ -161,7 +162,7 @@ const Contect=()=>{
               </div>
               <div className="ml-6 grow">
                 <p className="mb-2 font-bold ">Sales questions</p>
-                <p className="text-neutral-500 ">sales@example.com</p>
+                <p className="text-neutral-500 ">sales@CybromConnect.com</p>
                 <p className="text-neutral-500 ">+1 234-567-89</p>
               </div>
             </div>
@@ -188,7 +189,7 @@ const Contect=()=>{
               </div>
               <div className="ml-6 grow">
                 <p className="mb-2 font-bold ">Press</p>
-                <p className="text-neutral-500 ">press@example.com</p>
+                <p className="text-neutral-500 ">press@CybromConnect.com</p>
                 <p className="text-neutral-500 ">+1 234-567-89</p>
               </div>
             </div>
@@ -215,7 +216,7 @@ const Contect=()=>{
               </div>
               <div className="ml-6 grow">
                 <p className="mb-2 font-bold">Bug report</p>
-                <p className="text-neutral-500 ">bugs@example.com</p>
+                <p className="text-neutral-500 ">bugs@cybromConnect.com</p>
                 <p className="text-neutral-500">+1 234-567-89</p>
               </div>
             </div>
