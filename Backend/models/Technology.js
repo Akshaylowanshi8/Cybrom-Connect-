@@ -6,7 +6,7 @@ const TechSchema  = mongoose.Schema({
     Tdescription:String,
     Tprice:Number,
     Tvedio:String,
-    Timages: [String], 
+    Timages: { type: [String], required: true }, 
     defaultImage: String
 
 })
