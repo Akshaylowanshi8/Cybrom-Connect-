@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 
+
 const Navbar=()=>{
 
 return(<>
@@ -17,8 +18,10 @@ return(<>
             {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" */}
             <Link className="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white  hover:bg-gray-700 hover:text-white" aria-current="page" to="home">Home</Link>
             <Link className="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white  hover:bg-gray-700 hover:text-white" aria-current="page" to="about">About</Link>
+            <Link className="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white  hover:bg-gray-700 hover:text-white" aria-current="page" to="contect">Contect Us </Link>
             <Link className="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white  hover:bg-gray-700 hover:text-white" aria-current="page" to="">Jobs</Link>
             <Link className="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white  hover:bg-gray-700 hover:text-white" aria-current="page" to="login">Login</Link>
+            <Link className="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white  hover:bg-gray-700 hover:text-white" aria-current="page" to="alogin">AdminLogin</Link>
           </div>
         </div>
       </div>
